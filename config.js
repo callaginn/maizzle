@@ -10,19 +10,25 @@
 */
 
 module.exports = {
-  build: {
-    assets: {
-      source: 'src/assets/images',
-      destination: 'images',
-    },
-    destination: {
-      path: 'build_local',
-    },
-    tailwind: {
-      css: 'src/assets/css/main.css',
-    },
-    templates: {
-      root: 'src/templates',
-    },
-  },
+	build: {
+		assets: {
+			source: 'src/assets/images',
+			destination: 'images'
+		},
+		destination: {
+			path: 'build_local'
+		},
+		tailwind: {
+			css: 'src/assets/css/main.css'
+		},
+		templates: {
+			root: 'src/templates'
+		},
+	},
+	inlineCSS: {
+		enabled: true
+	},
+	prettify: {
+		enabled: true
+	}
 }
